@@ -1,31 +1,11 @@
-# Adonis fullstack application
+# chamado-sw-back-end
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+Backend do sistema de chamados
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+##Configuration
 
-## Setup
+Não esquecer de configurar o arquivo .env, pode se basear no .env.example
 
-Use the adonis command to install the blueprint
+##Run application
 
-```bash
-adonis new yardstick
-```
-
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+adonis serve --dev
