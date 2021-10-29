@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "88334eaa-fcdb-4646-b29b-fd140a302d68",
+		"name": "vagaDev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registerUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"teste@gmail.com\",\r\n  \"password\": \"1234\",\r\n  \"fname\": \"teste\",\r\n  \"lname\": \"final\",\r\n  \"role\": \"operator\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3333/users/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerSolicitation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"problem\": \"timeout\",\r\n  \"expectedResult\": \"return 200\",\r\n  \"additionalInformation\": \"log api\",\r\n  \"type\": \"BUG\",\r\n  \"openingDate\": \"2021-10-28T19:28:00.000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3333/solicitations/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"solicitations",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"hebert@gmail.com\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3333/users/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTdiMjIwYWExOTlhNzI0ZjhiZDg3NzkiLCJpYXQiOjE2MzU0NzM4OTd9.vQyl0wVFlAkVbKGopqCzM1e-3dbjCwfdf9C8AOVdPAg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3333/users/list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listSearch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTdiMjIwYWExOTlhNzI0ZjhiZDg3NzkiLCJpYXQiOjE2MzU0NjQ3MTl9.QGbn-Twp1w8RjBpEGIJpb3BfworYyOIYg6lkYcPFSMY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3333/users/search?email=hebert@gmail.com",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hebert@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listSolicitation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTdiMjIwYWExOTlhNzI0ZjhiZDg3NzkiLCJpYXQiOjE2MzU0NjIxNzN9.qPZHSxXmf-2FaiobuPqgi7tj0GeE5SrURI3DkefWGII",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3333/solicitations/list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"solicitations",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

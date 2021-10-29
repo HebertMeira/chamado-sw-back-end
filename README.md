@@ -9,3 +9,7 @@ Não esquecer de configurar o arquivo .env, pode se basear no .env.example
 ##Run application
 
 adonis serve --dev
+
+##Collections
+
+..assets/postman
