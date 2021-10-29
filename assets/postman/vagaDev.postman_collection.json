@@ -148,16 +148,6 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTdiMjIwYWExOTlhNzI0ZjhiZDg3NzkiLCJpYXQiOjE2MzU0NjQ3MTl9.QGbn-Twp1w8RjBpEGIJpb3BfworYyOIYg6lkYcPFSMY",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -198,16 +188,6 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTdiMjIwYWExOTlhNzI0ZjhiZDg3NzkiLCJpYXQiOjE2MzU0NjIxNzN9.qPZHSxXmf-2FaiobuPqgi7tj0GeE5SrURI3DkefWGII",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"body": {

@@ -35,7 +35,6 @@ class SolicitationController {
 	
 	async list({ request, auth, response }) {
         try {
-            await auth.check()
             const solicitations = await Solicitation.all()
             return solicitations
         } catch (error) {

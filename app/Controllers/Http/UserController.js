@@ -59,7 +59,6 @@ class UserController {
 
     async list({ request, auth, response }) {
         try {
-            await auth.check()
             const users = await User.all()
             return users
         } catch (error) {
