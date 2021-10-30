@@ -133,8 +133,8 @@ module.exports = {
   */
   csrf: {
     enable: true,
-    methods: ['PUT', 'DELETE'],
-    filterUris: [],
+    methods: ['DELETE'],
+    filterUris: ['/solicitations/(.*)'],
     cookieOptions: {
       httpOnly: false,
       sameSite: true,
