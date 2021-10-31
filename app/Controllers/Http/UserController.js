@@ -1,6 +1,7 @@
 'use strict'
 
 const User = use('App/Models/User')
+const Mail = use('Mail')
 
 class UserController {
 	async register({ request, auth, response }) {
@@ -24,6 +25,13 @@ class UserController {
 			user.lname = lname
 			user.role = role
 			let success = await user.save()
+			
+			let sendEmail = await Mail.send('password', { fname, password }, (message) => {
+				message
+					.from('support@chamadosw.io')
+					.to(email)
+			})
+
 			return response.status(201).json({
 				status: 'ok',
 				message: 'User is registered',
